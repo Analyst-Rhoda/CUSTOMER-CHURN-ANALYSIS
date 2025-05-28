@@ -1,5 +1,4 @@
-# CUSTOMER-CHURN-ANALYSIS
-A beginner-friendly Power BI project that explores why telecom customers leave (churn) and what businesses can do to keep them. It includes a clear explanation of the business problem, simple visualizations, key insights, and recommendations, all presented in a way anyone can understand, even without a tech background.
+
 # 📊 Customer Churn Analysis with Power BI
 
 > **"Every customer who leaves your business has a reason. My job is to find out why — and help you fix it."**
@@ -7,7 +6,7 @@ A beginner-friendly Power BI project that explores why telecom customers leave (
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 
 1. [Introduction](#introduction)
 2. [The Business Problem](#the-business-problem)
