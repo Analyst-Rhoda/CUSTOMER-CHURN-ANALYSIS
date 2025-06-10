@@ -41,11 +41,33 @@ Imagine owning a business where people can cancel their service at any time. You
 
 For a telecom company, high churn means **lost revenue**, **lower trust**, and **high marketing costs** because now you have to work twice as hard to find new customers.
 
-This project answers one important question:
+For this project, I wanted to check through the customer data because I noticed some customers were dropping.
 
-> **Why are customers leaving, and how can we make them stay?**
+📉 1,869 customers out of 7,043 had churned. That’s a 26.5% churn rate.
 
----
+But it wasn’t just numbers.
+
+💸 It meant they lost 2.86 million in revenue due to churned customers.
+
+So,  I Asked the Right Questions…
+Who exactly are the customers that are leaving?
+
+When do they leave?
+
+How long did they stay?
+
+How were they paying?
+
+What services were they using?
+
+Did tenure or contract type matter?
+
+Were they male or female?
+
+Was the monthly bill too high?
+
+These are the questions every business should be asking, but often don’t — until it’s almost too late.
+
 
 ## Project Goal
 
@@ -118,25 +140,63 @@ Here's what you'll find on the dashboard:
 
 ## What I Found (Key Insights)
 
-### 1. Short Contracts = High Risk
+### 1. Churn Rate: 26.54%
+Out of 7,043 total customers, 1,869 had left. That’s over one in every four customers walking away. Huge red flag 🚩.
 
-Most people who left had **month-to-month** contracts. It makes sense — it’s easier to leave when there’s no commitment.
+### 2. The Monthly Charges Trap
+The average monthly charge stood at $64.76.
 
-### 2. New Customers Are Leaving Early
+But here's what the scatter plot (Tenure vs. Monthly Charges vs. Churn) revealed:
 
-Many customers who churned had been with the company for **less than a year**. This means the **first few months are critical**.
+➡️ Most of the customers who churned were paying high monthly bills but had low tenure.
 
-### 3. Electronic Checks Cause Friction
+Translation? They didn't stay long, because they were likely overwhelmed by the cost early on.
 
-People who paid using **electronic checks** churned more. Possibly because it’s less convenient or they had billing issues.
+Insight: High monthly bills + low loyalty = high churn risk.
 
-### 4. No Tech Support = Frustrated Users
+### 3. Contract Type
 
-Customers with **fiber optic internet** but **no technical support** were more likely to leave. This suggests they had problems but couldn’t get help.
+Month-to-month customers had the highest churn. (1.7k churned)
 
-### 5. High Charges Drive People Away
+Two-year contract customers had 0 churn.
 
-Customers with **high monthly bills** were more likely to churn. Price sensitivity is a real concern.
+One-year contracts had relatively low churn as well.
+
+Insight: The longer the contract, the lower the churn. Month-to-month feels convenient, but it’s also disposable. No skin in the game.
+
+### 4. Internet Service Matters
+Among customers:
+
+Those using Fiber Optic had high churn (1.3k).
+
+DSL users had significantly lower churn.
+
+No Internet users also showed lower churn.
+
+Insight: Fiber Optic service users are the ones leaving most. Possibly due to performance, pricing, or unmet expectations.
+
+### 5. Gender? Not the Issue
+Both male and female customers had similar churn numbers (approx. 900 each). Gender wasn’t a defining factor.
+
+Insight: Focus should shift to behavior, not demographics.
+
+### 6. Payment Method Patterns
+Surprisingly, electronic checks were used by most churned customers.
+
+1.1k churned customers used electronic checks.
+
+All other payment methods had much lower churn.
+
+Insight: Payment method may correlate with churn behavior. Electronic check users could be price-sensitive or find it harder to manage recurring payments.
+
+### 7. Tenure: The Silent Killer
+The churn trend over tenure shows a massive drop in churn after just a few months.
+
+Most customers leave within their first 3-6 months.
+
+The longer a customer stays, the less likely they are to churn.
+
+Insight: Retention efforts must focus heavily on the first 6 months.
 
 ---
 
@@ -151,37 +211,31 @@ Customers with **high monthly bills** were more likely to churn. Price sensitivi
 * **Lack of Support**: No technical support means customers feel stranded when issues arise.
 
 * **Perceived Overpricing**: When customers don’t see the value in what they’re paying for, they look elsewhere.
-
 ---
+## Recommendations
 
-## What the Business Can Do (Recommendations)
+### 1. Shift Focus to Long-Term Contracts
+Encourage customers to switch from month-to-month to 1- or 2-year contracts. Offer discounts, loyalty bonuses, or added value for longer contracts. Make the long-term plan feel irresistible.
 
-### 1. Encourage Longer Contracts
+### 2. Implement a First 90-Day Retention Strategy
+The first 3 months are make-or-break. Create onboarding journeys. Assign a customer success manager. Send weekly value emails. Offer check-ins. Make them feel like VIPs early on.
 
-* Offer discounts or rewards for customers who switch to **yearly contracts**.
-* Show value in staying long-term.
+### 3. Re-evaluate Fiber Optic Service Experience
+Since churn is highest here: Conduct customer interviews.Check complaint records and service quality. Possibly revise pricing or offer performance guarantees.
 
-### 2. Improve Customer Onboarding
+### 4. Improve Billing Transparency
+Many churned customers were on high bills early. Introduce bill previews. Break down charges more clearly. Allow custom plans or bundle discounts.
 
-* Create a strong welcome program to teach customers how to use the services.
-* Follow up during the first 90 days to solve issues early.
+### 5. Target Payment Method Optimization
+Encourage stable auto-payment methods over electronic checks. Offer discounts for bank drafts or card payments.Create nudges to switch payment methods at sign-up.
 
-### 3. Make Billing Easier
+### 6. Run Predictive Churn Models
+Use this kind of dashboard to not just analyze the past, but predict the future. Identify at-risk customers.Automate retention campaigns for them.
 
-* Promote auto-pay through **credit cards** or **bank transfer** (these methods had lower churn).
-* Simplify the billing process and improve communication.
+### 7. Segment Customers for Personalization
+Different customers churn for different reasons. Segment by tenure, payment method, and contract. Tailor communication accordingly.
 
-### 4. Add or Bundle Tech Support
 
-* Offer tech support as part of internet plans, especially for fiber users.
-* Educate customers on how to get help quickly.
-
-### 5. Re-evaluate Pricing
-
-* Analyze if high bills can be reduced or packaged better.
-* Offer loyalty discounts for long-term users.
-
----
 
 ## Why This Matters (Business Impact)
 
@@ -196,7 +250,7 @@ If these strategies are implemented, the business could:
 
 ## Dashboard Preview
 
-*Coming soon: Add an image or link to your live dashboard here.*
+![image](https://github.com/user-attachments/assets/311bb121-8698-45c7-8d3e-86e31a2e92a7)
 
 ---
 
